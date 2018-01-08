@@ -3,7 +3,7 @@
 ```
 public class WQUPC {
 	private int[] id;
-	private int[] size;
+	private int[] size; // for weighted union
 
 	public WQUPC(int N) {
 		id = new int[N];
@@ -15,7 +15,7 @@ public class WQUPC {
     
 	private  int root(int i) {
 		while (i != id[i]) {
-        	id[i] = id[id[i]];
+        	id[i] = id[id[i]];// for path compression
 			i = id[i];
 		}
 		return i;
