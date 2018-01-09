@@ -18,4 +18,5 @@ since we dont want push-pop-push-pop-… sequence when array is full, it will ke
 
 ### Queue
 Use **linked list** and **resizing array** to simulate queue.  
-Java generic linked list implementation: ![generic](https://i.imgur.com/fVCixIf.png?1)
+Java generic linked list implementation:   
+![generic](https://i.imgur.com/fVCixIf.png?1)
