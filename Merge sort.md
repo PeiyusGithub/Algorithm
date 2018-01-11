@@ -59,6 +59,21 @@ for small scale of input, insertion sort is faster than merge sort
 Use insertion sort for small subarrays.  
 Stop if already sorted.  
 Eliminate the copy to the auxiliary array. Save time (but not space)
-by switching the role of the input and auxiliary array in each recursive call.
-
-
+by switching the role of the input and auxiliary array in each recursive call.  
+**Bottom Up Merge Sort**
+```
+public class MergeBU
+{
+    private static void merge(...)
+    	{ /* as before */ }
+    public static void sort(Comparable[] a)
+    {
+      int N = a.length;
+      Comparable[] aux = new Comparable[N];
+      for (int sz = 1; sz < N; sz = sz+sz)
+      	for (int lo = 0; lo < N-sz; lo += sz+sz)
+      		merge(a, aux, lo, lo+sz-1, Math.min(lo+sz+sz-1, N-1));
+    }
+}
+```
+![bottom_up](https://i.imgur.com/ocQfnkB.png)
