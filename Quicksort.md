@@ -1,7 +1,7 @@
 ### Quick sort
 Basic plan.  
-・Shuffle the array.  (in order to guarantee the efficiency)
-**if the array is sorted, it will take qudractic time fot quick sort**4444
+・Shuffle the array.  (in order to guarantee the efficiency)  
+**if the array is sorted, it will take qudractic time fot quick sort**
 ・Partition so that, for some j  
 	– entry a[j] is in place  
 	– no larger entry to the left of j  
